@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2B0FA3791E17691400FFE111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA3781E17691400FFE111 /* AppDelegate.swift */; };
-		2B0FA37B1E17691400FFE111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA37A1E17691400FFE111 /* ViewController.swift */; };
 		2B0FA37E1E17691400FFE111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FA37C1E17691400FFE111 /* Main.storyboard */; };
 		2B0FA3801E17691400FFE111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FA37F1E17691400FFE111 /* Assets.xcassets */; };
 		2B0FA3831E17691400FFE111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FA3811E17691400FFE111 /* LaunchScreen.storyboard */; };
 		2B0FA38E1E17691400FFE111 /* PZImageBoardCollectionViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA38D1E17691400FFE111 /* PZImageBoardCollectionViewLayoutTests.swift */; };
 		2B0FA3991E17691400FFE111 /* PZImageBoardCollectionViewLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA3981E17691400FFE111 /* PZImageBoardCollectionViewLayoutUITests.swift */; };
+		2B0FA3A71E1770DE00FFE111 /* DemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA3A61E1770DE00FFE111 /* DemoCollectionViewController.swift */; };
+		2B0FA3A91E1770FE00FFE111 /* PZImageBoardCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA3A81E1770FE00FFE111 /* PZImageBoardCollectionViewLayout.swift */; };
+		2B0FA3AB1E17713D00FFE111 /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FA3AA1E17713D00FFE111 /* DemoCollectionViewCell.xib */; };
+		2B0FA3AD1E17714F00FFE111 /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA3AC1E17714F00FFE111 /* DemoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		2B0FA3751E17691400FFE111 /* PZImageBoardCollectionViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PZImageBoardCollectionViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0FA3781E17691400FFE111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B0FA37A1E17691400FFE111 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B0FA37D1E17691400FFE111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B0FA37F1E17691400FFE111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0FA3821E17691400FFE111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		2B0FA3941E17691400FFE111 /* PZImageBoardCollectionViewLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PZImageBoardCollectionViewLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0FA3981E17691400FFE111 /* PZImageBoardCollectionViewLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZImageBoardCollectionViewLayoutUITests.swift; sourceTree = "<group>"; };
 		2B0FA39A1E17691400FFE111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B0FA3A61E1770DE00FFE111 /* DemoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewController.swift; sourceTree = "<group>"; };
+		2B0FA3A81E1770FE00FFE111 /* PZImageBoardCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZImageBoardCollectionViewLayout.swift; sourceTree = "<group>"; };
+		2B0FA3AA1E17713D00FFE111 /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
+		2B0FA3AC1E17714F00FFE111 /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				2B0FA3781E17691400FFE111 /* AppDelegate.swift */,
-				2B0FA37A1E17691400FFE111 /* ViewController.swift */,
 				2B0FA37C1E17691400FFE111 /* Main.storyboard */,
 				2B0FA37F1E17691400FFE111 /* Assets.xcassets */,
 				2B0FA3811E17691400FFE111 /* LaunchScreen.storyboard */,
 				2B0FA3841E17691400FFE111 /* Info.plist */,
+				2B0FA3A61E1770DE00FFE111 /* DemoCollectionViewController.swift */,
+				2B0FA3A81E1770FE00FFE111 /* PZImageBoardCollectionViewLayout.swift */,
+				2B0FA3AA1E17713D00FFE111 /* DemoCollectionViewCell.xib */,
+				2B0FA3AC1E17714F00FFE111 /* DemoCollectionViewCell.swift */,
 			);
 			path = PZImageBoardCollectionViewLayout;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 				2B0FA3831E17691400FFE111 /* LaunchScreen.storyboard in Resources */,
 				2B0FA3801E17691400FFE111 /* Assets.xcassets in Resources */,
 				2B0FA37E1E17691400FFE111 /* Main.storyboard in Resources */,
+				2B0FA3AB1E17713D00FFE111 /* DemoCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0FA37B1E17691400FFE111 /* ViewController.swift in Sources */,
 				2B0FA3791E17691400FFE111 /* AppDelegate.swift in Sources */,
+				2B0FA3A71E1770DE00FFE111 /* DemoCollectionViewController.swift in Sources */,
+				2B0FA3A91E1770FE00FFE111 /* PZImageBoardCollectionViewLayout.swift in Sources */,
+				2B0FA3AD1E17714F00FFE111 /* DemoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
