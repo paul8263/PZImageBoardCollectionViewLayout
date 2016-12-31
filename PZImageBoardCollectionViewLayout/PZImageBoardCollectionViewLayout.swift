@@ -46,6 +46,7 @@ class PZImageBoardCollectionViewLayout: UICollectionViewLayout {
     private var layoutAttributes: [UICollectionViewLayoutAttributes] = []
 
     override func prepare() {
+        layoutAttributes = []
         heightForColumn = [CGFloat](repeating: cellMargin, count: numberOfColumn)
         for index in 0..<collectionView!.numberOfItems(inSection: 0) {
             let indexForColumn = heightForColumn.index(of: heightForColumn.min()!)!
