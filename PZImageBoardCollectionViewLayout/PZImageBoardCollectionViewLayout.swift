@@ -37,12 +37,15 @@ class PZImageBoardCollectionViewLayout: UICollectionViewLayout {
         }
     }
     
+    var columnWidth: CGFloat {
+        return (contentWidth - CGFloat(numberOfColumn + 1) * cellMargin ) / CGFloat(numberOfColumn)
+    }
+    
     private var heightForColumn: [CGFloat] = []
     
     private var layoutAttributes: [UICollectionViewLayoutAttributes] = []
 
     override func prepare() {
-        let columnWidth = (contentWidth - CGFloat(numberOfColumn + 1) * cellMargin ) / CGFloat(numberOfColumn)
         heightForColumn = [CGFloat](repeating: cellMargin, count: numberOfColumn)
         for index in 0..<collectionView!.numberOfItems(inSection: 0) {
             let indexForColumn = heightForColumn.index(of: heightForColumn.min()!)!
